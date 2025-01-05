@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+  <body>
+    <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid mx-5">
+          <a class="navbar-brand" href="#"
+            ><img src="images/bannerHome.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Abou-us.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="project-detail.html"
+                  >Our Projects</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Pravicy.html"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Faq.html">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html"
+                  >Blog</a
+                >
+              </li>
+              <!-- <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li> -->
+            </ul>
+            <form class="d-flex">
+              <a href="contact.html" class="btn">Contact us</a>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- ====== Hero banner Section ====== -->
+
+    <section id="hero">
+      <div class="container pb">
+        <div class="row justify-content-center">
+          <div class="col-lg-12 text-center py-5">
+            <div class="hero_img">
+              <img src="images/bannerHome.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="hero_heading">
+              <h1>Find Your New Home</h1>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="text_hero">
+              <p>
+                Finding your ideal home can be easy and stress-free with YFH
+                International. With an extensive range of high-end properties
+                and individualized assistance, we assist you in finding the
+                ideal location that fits your requirements and way of life. Let
+                us confidently and with ease lead you to your new home.
+              </p>
+              <div class="main_cont">
+                <div>
+                  <h1>300+</h1>
+                  <p>Property Build</p>
+                </div>
+                <div>
+                  <h1>7+</h1>
+                  <p>Years Experience</p>
+                </div>
+                <div>
+                  <h1>$90M</h1>
+                  <p>Property Sales</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="about_banner text-center">
+        <img class="world_img" src="images/world.png" alt="" />
+      </div>
+    </section>
+
+    <!-- ==== Banner Slider Section ==== -->
+    <div class="container-fluid p-0">
+      <div class="banner-slider">
+        <div class="slider">
+          <div class="slides">
+            <div
+              class="slide_ban"
+              style="background-image: url('images/slide2.jpeg')"
+            ></div>
+            <div
+              class="slide_ban"
+              style="background-image: url('images/banerslide.png')"
+            ></div>
+            <div
+              class="slide_ban"
+              style="background-image: url('images/slide3.jpeg')"
+            ></div>
+          </div>
+          <button class="prev" onclick="prevSlideBan()">&#10094;</button>
+          <button class="next" onclick="nextSlideBan()">&#10095;</button>
+        </div>
+
+        <!-- Thumbnails Section -->
+        <div class="thumbnails">
+          <div
+            class="thumbnail"
+            style="background-image: url('images/slide2.jpeg')"
+            onclick="showSlide(0)"
+          ></div>
+          <div
+            class="thumbnail"
+            style="background-image: url('images/banerslide.png')"
+            onclick="showSlide(1)"
+          ></div>
+          <div
+            class="thumbnail"
+            style="background-image: url('images/slide3.jpeg')"
+            onclick="showSlide(2)"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========= Logo Section ===== -->
+    <section id="logos">
+      <div class="container justify-content-center py-5">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="company_div">
+              <h1>Trusted by 50+ Companies</h1>
+              <div class="logos_img">
+                <img src="images/dub.png" alt="" />
+                <img src="images/investment.png" alt="" />
+                <img src="images/architech.png" alt="" />
+                <img src="images/real estate.png" alt="" />
+                <img src="images/donner.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== About US Section -->
+
+    <section id="About">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="about_img">
+              <img src="images/About image.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="about_text">
+              <h1>About Us</h1>
+              <p>
+                Our company has extensive experience in real estate, having
+                collaborated on over 10 vertical development projects ranging
+                from 7 to 44 units. We are currently managing projects in Puerto
+                Vallarta, Mexico, and Dubai, UAE, with plans to expand into
+                Bali, Indonesia, and Las Vegas, USA. Our vision is to develop
+                luxury yet affordable properties in prime locations, providing
+                exceptional investment opportunities that meet diverse client
+                needs. Committed to quality, we hire top professionals to
+                optimize processes and ensure we exceed client expectations in
+                every project.
+              </p>
+              <a href="#">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======== Our Projects Card Slider Section ====== -->
+    <section id="Our_project">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="project_div">
+              <h1>Our Projects</h1>
+              <p>
+                We pride ourselves for delivering high end finishes and high
+                value and revenue making properties. Diversifying in several
+                parts of the world and finding new Real Estate opportunities is
+                our main focus.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="arrow">
+              <button class="prev-btn" onclick="moveSlider(-1)">
+                &#10094;
+              </button>
+              <button class="next-btn" onclick="moveSlider(1)">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        <!-- Card Slider start -->
+        <div class="slider-container">
+          <div class="card-slider">
+            <div class="card">
+              <img src="images/newcard1.png" alt="Image 1" />
+              <div class="card-content">FRIDA</div>
+              <p>
+                A new beautiful development in the heart of Puerto Vallarta.
+                Introducing “FRIDA” a captivating
+              </p>
+              <a href="#">See Details</a>
+            </div>
+            <div class="card">
+              <img src="images/newcard2.png" alt="Image 1" />
+              <div class="card-content">LUZ</div>
+              <p>
+                A premier development nestled alongside the vibrant Emiliano
+                Zapata Market
+              </p>
+              <a href="#">See Details</a>
+            </div>
+            <div class="card">
+              <img src="images/newcard3.png" alt="Image 1" />
+              <div class="card-content">LUZ 2</div>
+              <p>
+                Our exciting new pre-construction project in Puerto Vallarta’s
+                vibrant Zona Romantica.
+              </p>
+              <a href="#">See Details</a>
+            </div>
+            <div class="card">
+              <img src="images/slide1.png" alt="Image 1" />
+              <div class="card-content">Golden Apartment</div>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth. Por
+              </p>
+              <a href="#">See Details</a>
+            </div>
+            <div class="card">
+              <img src="images/slide1.png" alt="Image 1" />
+              <div class="card-content">Golden Apartment</div>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth. Por
+              </p>
+              <a href="#">See Details</a>
+            </div>
+            <div class="card">
+              <img src="images/slide1.png" alt="Image 1" />
+              <div class="card-content">Golden Apartment</div>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth. Por
+              </p>
+              <a href="#">See Details</a>
+            </div>
+            <div class="card">
+              <img src="images/slide1.png" alt="Image 1" />
+              <div class="card-content">Golden Apartment</div>
+              <p>
+                Li Europan lingues es membres del sam familie. Lor separat
+                existentie es un myth. Por
+              </p>
+              <a href="#">See Details</a>
+            </div>
+          </div>
+        </div>
+        <!-- card slider end -->
+      </div>
+    </section>
+
+    <!--=== Our Develpment Section === -->
+
+    <section id="Our_dev">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="dev_div">
+              <h1>Our development</h1>
+            </div>
+          </div>
+          <div class="col-lg-6 m-auto">
+            <div class="dev_text">
+              <p>
+                We state that is in our best interest that you can count on our
+                support and trust from beginning to end, since our main
+                objective is that our clients are 100% satisfied and that our
+                work continues to recommend us.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="dev_card h-100">
+              <img src="images/fontisto_low-vision.png" alt="" />
+              <h3>Vision</h3>
+              <p>
+                To meet the evolving demands of the real estate market by
+                developing luxury yet affordable properties in prime locations.
+                We strive to provide our clients with exceptional investiemnt
+                opportunities, tailored to their diverse needs. As we expand our
+                international presence, we remain committedto delivering
+                outstanding value in both established and emerging markets.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="dev_card h-100">
+              <img src="images/badge.png" alt="" />
+              <h3>Quality</h3>
+              <p>
+                Committed to hire nothing but only the best engineers,
+                architects and professionals in general to the optimizing of
+                processes and times, complying with the quality standards in
+                accordance to the expectations of our clients.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="dev_card h-100">
+              <img src="images/ph_star-fill.png" alt="" />
+              <h3>EXPERIENCE</h3>
+              <p>
+                Our company has a wealth of experience in the real estate
+                market, having collaborated with multiple developers on over 10
+                vertical development projects, ranging from 7 to 44 units.
+                Currently, we are managing projects in Puerto Vallarta, México,
+                and in Dubai, UAE, with plans lo launch operations in Bali,
+                Indonesia, where we are already legally established.
+                Additionally, we are preparing to expand into Las Vegas, USA
+                this year.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= Our team Section ====== -->
+
+    <section id="teams_section">
+      <div class="container">
+        <div class="col-lg-12">
+          <h1>Our Team</h1>
+        </div>
+        <div class="custom-slider">
+          <div class="custom-card-container">
+            <div class="custom-card">
+              <img src="images/team1.png" alt="Image 1" />
+              <div class="custom-card-content">CARLOS GONZALEZ</div>
+              <p>(CEO Of YFH International)</p>
+            </div>
+            <div class="custom-card">
+              <img src="images/team2.png" alt="Image 2" />
+              <div class="custom-card-content">CARLOS GONZALEZ</div>
+              <p>(CEO Of YFH International)</p>
+            </div>
+            <div class="custom-card">
+              <img src="images/team3.png" alt="Image 3" />
+              <div class="custom-card-content">CARLOS GONZALEZ</div>
+              <p>(CEO Of YFH International)</p>
+            </div>
+            <div class="custom-card">
+              <img src="images/team1.png" alt="Image 4" />
+              <div class="custom-card-content">CARLOS GONZALEZ</div>
+              <p>(CEO Of YFH International)</p>
+            </div>
+            <div class="custom-card">
+              <img src="images/team2.png" alt="Image 5" />
+              <div class="custom-card-content">CARLOS GONZALEZ</div>
+              <p>(CEO Of YFH International)</p>
+            </div>
+          </div>
+          <div class="custom-dots-container"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Let Us Know Section ==== -->
+
+    <section id="let_us">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-2 text-center">
+            <div class="know_img">
+              <img src="images/know.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-7 text-center">
+            <div class="know_title">
+              <h1>Let Us Know</h1>
+              <p>WHAT YOU'RE LOOKING FOR! We will get back at you ASAP.</p>
+            </div>
+          </div>
+          <div class="col-lg-3 m-auto">
+            <div class="know_btn">
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- == Faq Section ===== -->
+
+    <section id="faq_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="faq_title">
+              <h1>Frequently Asked Question</h1>
+            </div>
+          </div>
+          <div class="col-lg-6 m-auto">
+            <div class="text_faq">
+              <p>
+                Our FAQ page provides insightful information to assist you
+                confidently navigate the real estate market. It addresses
+                important subjects such the procedures involved in purchasing
+                and selling, property management, financing choices, market
+                trends, and legal requirements.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="faq_img">
+              <img src="images/faq.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="faq-container home_faq">
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3>
+                    WWhat types of construction projects do you specialize in?
+                  </h3>
+                  <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Quisque nec metus urna. Proin sed volutpat lectus. Etiam non
+                    justo ut ante hendrerit pretium. Maecenas egestas magna
+                    vitae nisi dictum luctus. 
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3>How long does shipping take?</h3>
+                  <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Shipping usually takes 5-7 business days, depending on your
+                    location.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3>Do you ship internationally?</h3>
+                  <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Yes, we offer international shipping to select countries.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                  <h3>How long does shipping take?</h3>
+                  <span class="toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                  <p>
+                    Shipping usually takes 5-7 business days, depending on your
+                    location.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonial Section === -->
+
+    <section id="testimonial_sec">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 bg_fst">
+            <div class="testimonial-wrapper">
+              <div class="testimonial-content" id="testimonialContent">
+                <h3 class="role" id="role">Excellent Experience!!</h3>
+                <p class="feedback" id="feedback">
+                  “I had an excellent experience!! very happy with our home and
+                  service received by the realtors. Mario Carrasco was extremely
+                  nice, professional and communicative every single time we had
+                  questions. Can’t wait to be ready to purchase another
+                  apartment!”
+                </p>
+                <p class="person-name" id="personName">Adriana Concepcion</p>
+              </div>
+              <button class="arrow-btn left-arrow" onclick="prevTestimonial()">
+                &#10094;
+              </button>
+              <button class="arrow-btn right-arrow" onclick="nextTestimonial()">
+                &#10095;
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-7 bg_cls">
+            <div class="test_div">
+              <div class="testimonial">
+                <div class="testimonial-content">
+                  <h3 class="testimonial-name" id="testimonial-name">
+                    Testimonial
+                  </h3>
+                  <h1>Client Say</h1>
+                  <p class="testimonial-text" id="testimonial-text">
+                    Hear directly from our happy customers about their YFH
+                    experiences. The success stories of our clients demonstrate
+                    our dedication to providing them with open, honest advice,
+                    local knowledge, and first-rate service while they search
+                    for their ideal property in Mexico.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== Map Section ===== -->
+
+    <section id="map_sec">
+      <div class="container">
+        <div class="row">
+          <h1>Where We Operate</h1>
+          <p>
+            YFH International is a global real estate company that serves a
+            variety of consumers demands by providing real estate solutions in
+            desirable places.
+          </p>
+          <div class="map_set">
+            <img src="images/map.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Footer Section =====-->
+    <footer>
+      <div class="container">
+        <div class="row justify-content-center pb-5">
+          <div class="col-lg-2 text-center">
+            <div class="logo_foter">
+              <img src="images/footer logo.png" alt="" />
+            </div>
+          </div>
+          <div class="col-lg-7 text-center m-auto">
+            <div class="footer_page">
+              <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Our Project</li>
+                <li>Privacy Policy</li>
+                <li>FAQs</li>
+                <li>Contact Us</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 m-auto">
+            <div class="social_icon">
+              <img src="images/fb.png" alt="" />
+              <img src="images/tiktok.png" alt="" />
+              <img src="images/insta.png" alt="" />
+              <img src="images/linkedin-fill.png" alt="" />
+              <img src="images/pinterest.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="border_hr"><hr /></div>
+        <div class="row pt-5 justify-content-center">
+          <div class="col-lg-4 contact_foter">
+            <h4>Insurgentes 108, Puerto Vallarta, Mexico</h4>
+            <p>+52 322 244 0171</p>
+          </div>
+          <div class="col-lg-4 contact_foter">
+            <h4>contact@yfhinternational.com</h4>
+          </div>
+          <div class="col-lg-4 contact_foter">
+            <h4>Office Hours: 8AM - 5PM</h4>
+            <p>Sunday - Off</p>
+          </div>
+          <div class="col-lg-7 text-center check_div">
+            <div class="newsLater">
+              <input type="text" name="" placeholder="Enter Email" id="" />
+              <button>Subscribe</button>
+            </div>
+            <input class="checkBox" type="checkbox" name="" id="" /><span
+              >I agree that my submitted data is being collected and
+              stored.</span
+            >
+            <p class="copyRight">
+              © 2024 Your Future Home. All Rights Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+  <script>
+    const testimonials = [
+      {
+        designation: "Excellent Experience!!",
+        text: "This is an amazing product!",
+        name: "Adriana Concepcion",
+      },
+      {
+        designation: "Marketing Head",
+        text: "Great service and support.",
+        name: "Jane Smith",
+      },
+      {
+        designation: "CTO",
+        text: "Highly recommend this for teams!",
+        name: "Alice Johnson",
+      },
+    ];
+
+    let currentIndex = 0;
+
+    function updateTestimonial(index) {
+      const testimonialElement = document.getElementById("testimonialContent");
+      testimonialElement.style.opacity = 0;
+
+      setTimeout(() => {
+        document.getElementById("role").textContent =
+          testimonials[index].designation;
+        document.getElementById("feedback").textContent =
+          testimonials[index].text;
+        document.getElementById("personName").textContent =
+          testimonials[index].name;
+        testimonialElement.style.opacity = 1;
+      }, 500);
+    }
+
+    function nextTestimonial() {
+      currentIndex = (currentIndex + 1) % testimonials.length;
+      updateTestimonial(currentIndex);
+    }
+
+    function prevTestimonial() {
+      currentIndex =
+        (currentIndex - 1 + testimonials.length) % testimonials.length;
+      updateTestimonial(currentIndex);
+    }
+  </script>
+  <script src="js/card.js"></script>
+  <script src="js/teams.js"></script>
+  <script src="js/bannerSlider.js"></script>
+</html>
